@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Punjab</title>
+</head>
+
+<body>
+    <div class="body-container">
+        <div class="nav-menu-item">
+            <ul class="nav-menu-bar">
+                <li onclick="myFunction('item1')">About</li>
+                <li onclick="myFunction('item2')">Symbol</li>
+                <li onclick="myFunction('item3')">Language</li>
+                <li onclick="myFunction('item4')">Religion</li>
+                <li onclick="myFunction('item5')">Tourist Place</li>
+            </ul>
+        </div>
+        <div class="menu-detail">
+            <div id="item1">
+                <div><strong>Formation : </strong>1<sup>st</sup> May 1960</div>
+                <div><strong>Capital : </strong>Chandigarh</div>
+                <div><strong>Districts : </strong>22</div>
+                <div><strong>Governor : </strong>V p Singh Bandnore</div>
+                <div><strong>Chief Minister : </strong>Amarinder Singh</div>
+                <div><strong>Total Area : </strong>50,362 km<sup>2</sup>(19,445 sq mi)</div>
+                <div><strong>Area rank : </strong>19<sup>th</sup></div>
+
+
+            </div>
+            <div id="item2" style="display: none;">
+                <div>
+                    <p>Symbol of Gujarat</p>
+                    <div><strong>Emblem : </strong><img src="images\pb_emblem.png" alt="" height="225px"width="200px"></div>
+                    <div><strong>Dance : </strong>Bhangra,Giddha</div>
+                    <div><strong>Mammal : </strong>Blackbuck</div>
+                    <div><strong>Bird : </strong>Baaz</div>
+                    <div><strong>Flower : </strong>Gladiolus</div>
+                    <div><strong>Tree : </strong>Sheesham</div>
+                </div>
+            </div>
+        </div>
+        <div id="item3" style="display: none;">
+            <p>Main languages of Punjab</p>
+            <div><img src="/images/pb_language.png" alt="" style="border-radius: 10px; margin-left: 10%;"></div>
+        </div>
+        <div id="item4" style="display: none;">
+        <p>Religion in Punjab (2011) </p>
+        <div><img src="/images/pb_religion.png" alt="" style="border-radius: 10px; margin-left: 10%;"></div>
+        </div>
+        <div id="item5" style="display: none;">
+        <div>            
+            <p>Hills</p>
+            <li>Panchkula Hill Station</li>
+            <li>Parwanoo Hill Station</li>
+            <li>Barog Hill Station</li>
+            <li>Nalagarh Hill Station</li>
+        </div>
+        <div>
+            <p>Holy Places</p>
+            <li>Golden Templee</li>
+            <li>Tarn Taran Sahib</li>
+            <li>Durgiana Temple</li>
+            <li>Devi Talab Mandir</li>
+        </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        function myFunction(id) {
+            var item = id;
+            var item1 = "item1";
+            var item2 = "item2";
+            var item3 = "item3";
+            var item4 = "item4";
+            var item5 = "item5";
+            var i1 = item1.localeCompare(item);
+            var i2 = item2.localeCompare(item);
+            var i3 = item3.localeCompare(item);
+            var i4 = item4.localeCompare(item);
+            var i5 = item5.localeCompare(item);
+            if (i1 == 0) {
+                document.getElementById('item1').style.display = 'block';
+                document.getElementById('item2').style.display = 'none';
+                document.getElementById('item3').style.display = 'none';
+                document.getElementById('item4').style.display = 'none';
+                document.getElementById('item5').style.display = 'none';
+            }
+            if (i2 == 0) {
+                document.getElementById('item1').style.display = 'none';
+                document.getElementById('item2').style.display = 'block';
+                document.getElementById('item3').style.display = 'none';
+                document.getElementById('item4').style.display = 'none';
+                document.getElementById('item5').style.display = 'none';
+            }
+            if (i3 == 0) {
+                document.getElementById('item1').style.display = 'none';
+                document.getElementById('item2').style.display = 'none';
+                document.getElementById('item3').style.display = 'block';
+                document.getElementById('item4').style.display = 'none';
+                document.getElementById('item5').style.display = 'none';
+            }
+            if (i4 == 0) {
+                document.getElementById('item2').style.display = 'none';
+                document.getElementById('item1').style.display = 'none';
+                document.getElementById('item4').style.display = 'block';
+                document.getElementById('item3').style.display = 'none';
+                document.getElementById('item5').style.display = 'none';
+            }
+            if (i5 == 0) {
+                document.getElementById('item1').style.display = 'none';
+                document.getElementById('item4').style.display = 'none';
+                document.getElementById('item3').style.display = 'none';
+                document.getElementById('item2').style.display = 'none';
+                document.getElementById('item5').style.display = 'block';
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>

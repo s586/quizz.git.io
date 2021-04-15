@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nav.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="body-container">
+        <div class="nav-menu-item">
+            <ul class="nav-menu-bar">
+                <li onclick="myFunction('item1')">1</li>
+                <li onclick="myFunction('item2')">2</li>
+                <li onclick="myFunction('item3')">3</li>
+                <li onclick="myFunction('item4')">4</li>
+                <li onclick="myFunction('item5')">5</li>
+            </ul>
+        </div>
+        <div class="menu-detail">
+            <div id="item1" style="display: none;">Hii this is item1</div>
+            <div id="item2" style="display: none;">hii this is item2sdgrg</div>
+            <div id="item3" style="display: none;">hii this is item3</div>
+            <div id="item4" style="display: none;">hii this is item4</div>
+            <div id="item5" style="display: none;">hii this is item5</div>
+        </div>
+    </div>
+    <script>
+        function myFunction(id){
+            var item = id;
+            var item1 = "item1";
+            var item2 = "item2";
+            var item3 = "item3";
+            var item4 = "item4";
+            var item5 = "item5";
+            var i1=item1.localeCompare(item);
+            var i2=item2.localeCompare(item);
+            var i3=item3.localeCompare(item);
+            var i4=item4.localeCompare(item);
+            var i5=item5.localeCompare(item);
+            if(i1==0){
+                document.getElementById('item1').style.display='block';
+                document.getElementById('item2').style.display='none';
+                document.getElementById('item3').style.display='none';
+                document.getElementById('item4').style.display='none';
+                document.getElementById('item5').style.display='none';
+            }
+            if(i2==0){
+                document.getElementById('item1').style.display='none';
+                document.getElementById('item2').style.display='block';
+                document.getElementById('item3').style.display='none';
+                document.getElementById('item4').style.display='none';
+                document.getElementById('item5').style.display='none';
+            }
+            if(i3==0){
+                document.getElementById('item1').style.display='none';
+                document.getElementById('item2').style.display='none';
+                document.getElementById('item3').style.display='block';
+                document.getElementById('item4').style.display='none';
+                document.getElementById('item5').style.display='none';
+            }
+            if(i4==0){
+                document.getElementById('item2').style.display='none';
+                document.getElementById('item1').style.display='none';
+                document.getElementById('item4').style.display='block';
+                document.getElementById('item3').style.display='none';
+                document.getElementById('item5').style.display='none';
+            }
+            if(i5==0){
+                document.getElementById('item1').style.display='none';
+                document.getElementById('item4').style.display='none';
+                document.getElementById('item3').style.display='none';
+                document.getElementById('item5').style.display='none';
+                document.getElementById('item5').style.display='block';
+            }
+
+
+        }
+    </script>
+</body>
+</html>

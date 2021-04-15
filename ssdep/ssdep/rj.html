@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Rajasthan</title>
+</head>
+
+<body>
+    <div class="body-container">
+        <div class="nav-menu-item">
+            <ul class="nav-menu-bar">
+                <li onclick="myFunction('item1')">About</li>
+                <li onclick="myFunction('item2')">Symbol</li>
+                <li onclick="myFunction('item3')">Language</li>
+                <li onclick="myFunction('item4')">Religion</li>
+                <li onclick="myFunction('item5')">Tourist Place</li>
+            </ul>
+        </div>
+        <div class="menu-detail">
+            <div id="item1">
+                <div><strong>Formation : </strong>30<sup>th</sup> March 1949</div>
+                <div><strong>Capital : </strong>Jaipur</div>
+                <div><strong>Districts : </strong>741</div>
+                <div><strong>Governor : </strong>kalraj Mishra</div>
+                <div><strong>Chief Minister : </strong>Ashok Gehlot(INC)</div>
+                <div><strong>Total Area : </strong>342,239 km<sup>2</sup>(132,139 sq mi)</div>
+                <div><strong>Area rank : </strong>1<sup>st</sup></div>
+
+
+            </div>
+            <div id="item2" style="display: none;">
+                <div>
+                    <p>Symbol of Rajasthan</p>
+                    <div><strong>Emblem : </strong><img src="images\rj_emblem.png" alt="" height="200px" width="130px">
+                    </div>
+                    <div><strong>Dance : </strong>Ghoomar</div>
+                    <div><strong>Mammal : </strong>Cammel and Chinkara</div>
+                    <div><strong>Bird : </strong>Godawan</div>
+                    <div><strong>Flower : </strong>Rohida</div>
+                    <div><strong>Tree : </strong>Khejri</div>
+                    <div><strong>Game : </strong>Basketball</div>
+
+                </div>
+            </div>
+        </div>
+        <div id="item3" style="display: none;">
+            <p>Main languages of Rajasthan</p>
+            <div><img src="/images/rj_language.png" alt="" style="border-radius: 10px; margin-left: 10%;"></div>
+        </div>
+        <div id="item4" style="display: none;">
+            <p>Religion in Rajasthan (2011) </p>
+            <div><img src="/images/rj_religion.png" alt="" style="border-radius: 10px; margin-left: 10%;"></div>
+        </div>
+        <div id="item5" style="display: none;">
+            <div>
+                <p>WaterFalls</p>
+                <li>Menal WaterFall</li>
+                <li>Bhimlat falls</li>
+                <li>Alewa Waterfalls</li>
+                <li>Dhrudhiya Waterfalls</li>
+            </div>
+            <div>
+                <p>Hills</p>
+                <li>Mount Abu</li>
+                <li>Guru Shikhar Hills</li>
+                <li>Achalgarh Hill Station</li>
+                <li>Ranakpur Hill</li>
+            </div>
+            <div>
+                <p>Holy Places</p>
+                <li>Eklingji Temple</li>
+                <li>Mehandipur Balaji Temple</li>
+                <li> Rani Sati Temple</li>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        function myFunction(id) {
+            var item = id;
+            var item1 = "item1";
+            var item2 = "item2";
+            var item3 = "item3";
+            var item4 = "item4";
+            var item5 = "item5";
+            var i1 = item1.localeCompare(item);
+            var i2 = item2.localeCompare(item);
+            var i3 = item3.localeCompare(item);
+            var i4 = item4.localeCompare(item);
+            var i5 = item5.localeCompare(item);
+            if (i1 == 0) {
+                document.getElementById('item1').style.display = 'block';
+                document.getElementById('item2').style.display = 'none';
+                document.getElementById('item3').style.display = 'none';
+                document.getElementById('item4').style.display = 'none';
+                document.getElementById('item5').style.display = 'none';
+            }
+            if (i2 == 0) {
+                document.getElementById('item1').style.display = 'none';
+                document.getElementById('item2').style.display = 'block';
+                document.getElementById('item3').style.display = 'none';
+                document.getElementById('item4').style.display = 'none';
+                document.getElementById('item5').style.display = 'none';
+            }
+            if (i3 == 0) {
+                document.getElementById('item1').style.display = 'none';
+                document.getElementById('item2').style.display = 'none';
+                document.getElementById('item3').style.display = 'block';
+                document.getElementById('item4').style.display = 'none';
+                document.getElementById('item5').style.display = 'none';
+            }
+            if (i4 == 0) {
+                document.getElementById('item2').style.display = 'none';
+                document.getElementById('item1').style.display = 'none';
+                document.getElementById('item4').style.display = 'block';
+                document.getElementById('item3').style.display = 'none';
+                document.getElementById('item5').style.display = 'none';
+            }
+            if (i5 == 0) {
+                document.getElementById('item1').style.display = 'none';
+                document.getElementById('item4').style.display = 'none';
+                document.getElementById('item3').style.display = 'none';
+                document.getElementById('item2').style.display = 'none';
+                document.getElementById('item5').style.display = 'block';
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>

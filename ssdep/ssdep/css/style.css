@@ -1,0 +1,16 @@
+body{
+    font-size: 20px;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu-detail div{
+    font-size: 20px;
+    padding: 10px;
+}
+p:first-child{
+    color: black;
+    font-size: 25px;
+    margin-left: 20%;
+}

@@ -1,0 +1,20 @@
+
+ul.nav-menu-bar{
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+.nav-menu-bar li{
+    float: left;
+    padding: 10px;
+    color: wheat;
+    font-size: large;
+    font-weight: bold;
+
+}
+.nav-menu-bar li:hover{
+    cursor: pointer;
+    background-color: grey;
+    color: red;
+}

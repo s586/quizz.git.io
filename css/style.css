@@ -1,0 +1,138 @@
+*{
+	margin:0;
+	 padding:0; 
+  }
+  body{
+	 font-family:calibri; 
+	  
+  }
+  header{
+	  
+	  background-color: #28abe3;
+  }
+  
+  header img{
+	       width:100px;
+		   height: 60px;
+	       margin-top: 10px;
+		   float:left;
+  }
+  
+  header h1{
+	   text-align:center;
+	   padding:5px;
+	   font-size:3em;
+	   color:white;
+	   text-shadow:1px 1px 1px gray;
+  }
+     
+	nav ul{
+		 background-color:#2980b9;
+	} 
+	
+	nav ul li,
+	 nav ul li a{
+		   display: inline-block;
+		   color: #FFF;
+	 }
+	  
+	   nav ul li a{
+		    text-decoration: none;
+			padding:10px;
+	   } 
+	   
+	   
+	     nav ul li a:hover,
+		 nav ul li a:active
+		 {
+			background-color:#409ad5; 
+		 }
+		 
+		 nav .srch{
+			   float : right;
+			   margin-top: 10px;
+			   margin-right: 80px;
+			   width: 20%;
+			   height: 20px;
+			   border-radius: 4px;
+			   border:none;
+			   text-indent: 6px;
+		 }
+		 
+		 
+		 section{
+			 
+			  background-color:#efefef;
+			  margin:10px;
+			  width :70%;
+			  float:left;
+		 }
+		 article{
+			    
+			 
+		 }
+		   article .profile1{
+			          width:50px;
+					  height:50px;
+					  margin:2px;
+					  float:left;
+					  border-radius:100px;
+			   
+		   }
+		   article .profile2{
+			                width:30%;
+			                padding-left:30%;
+		   }
+		   article p{
+			       padding:5px;
+		   }
+		   
+		   article .profile3{
+			                width:100%;
+							height:60%
+			   
+		   }
+		   
+		   aside{
+			      background-color: #efefef;
+				  float:right;
+				  margin:10px;
+				  width:25%;
+		   }
+		   
+		    aside h3{
+			         text-align: center;
+					 background-color: #afafaf;
+					 color:#FFF;
+					 padding:10px;
+					 border-top-left-radius:10px;
+					 border-top-right-radius:10px;
+			}
+			
+			aside ul li,
+			aside ul li a{
+				            text-indent:10px;
+							display:block:
+			}
+			aside ul li a:link,
+			aside ul li a:visited{
+				               text-decoration:none;
+							   color:blue;
+							   font-size:1.5em;
+							   padding:10px;
+							   transition:all 0.5s;
+			}
+			  aside ul li a:hover,
+			  aside ul li a:active{
+				      text-indent:10px;
+					  background-color:#409ad5;
+			  }
+			  footer{
+				  background-color: #28abe3;
+                    clear : both;
+                  text-align:center;
+                  padding:10px;				  
+			  }
+			     
+		   
+  
